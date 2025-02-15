@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, orientation=landscape">
+    <title>亲爱的koishi</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <audio id="bg-music" loop>
+        <source src="always_online.mp3" type="audio/mp3">
+    </audio>
+
+    <button id="music-control">播放音乐</button>
+
+    <div class="container">
+        <h1>嘿，koishi</h1>
+        <p id="daily-message"></p>
+
+        <button id="surpriseBtn">点我看看</button>
+        <p id="message" class="hidden"></p>
+
+        <div class="chatbox">
+            <h2>留言板</h2>
+            <textarea id="user-message" placeholder="写下你的心情..."></textarea>
+            <button id="save-message">保存</button>
+            <div id="saved-messages"></div>
+        </div>
+
+        <h2>我们的纪念日</h2>
+        <p>我们已经认识了 <span id="days-count"></span> 天</p>
+
+        <h2>翻牌小游戏</h2>
+        <div class="game">
+            <div class="card" onclick="flipCard(this)">💌</div>
+            <div class="card" onclick="flipCard(this)">🎁</div>
+            <div class="card" onclick="flipCard(this)">🌟</div>
+        </div>
+    </div>
+</body>
+</html>
